@@ -27,10 +27,12 @@ html,body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  
 }
 
 main{
-  flex:1
+  flex:1;
+  background-color: #bc9c22;
 }
 
 body{
@@ -160,6 +162,53 @@ label{
   width: 100%;
   text-align: center;
   padding:20px 0;
-  margin-top: 0;
+  margin-top: auto;
 }
 
+
+
+
+@media only screen and (max-width: 768px) {
+  /* Styles for tablets and phones (max-width of 768px) */
+  .form-container {
+   /* Reduce the width to fit smaller screens */
+    margin: 20px auto;
+    min-width: auto; /* Let it shrink more */
+    max-width: none;
+  }
+
+  .form-group {
+    flex-direction: column; /* Stack form fields vertically */
+    gap: 10px; /* Adjust the gap between fields */
+  }
+
+  .form-feild {
+    width: 100%; /* Make input fields take the full width on mobile */
+  }
+
+  input, select, textarea {
+    width: 100%; /* Make input fields take full width */
+    height: 40px; /* Slightly increase the height for touch targets */
+    font-size: 1rem; /* Increase font size for better readability */
+  }
+
+  textarea {
+    min-width: 100%; /* Adjust the width of text area */
+    max-width: 100%;
+  }
+
+  button {
+    width: 100%; /* Make the submit button take full width */
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .form-header h2 {
+    font-size: 1.5rem; /* Adjust the heading size for smaller screens */
+  }
+
+  .footer {
+    padding: 10px; /* Adjust footer padding for smaller screens */
+    height: 50px; /* Adjust footer height */
+  }
+}
