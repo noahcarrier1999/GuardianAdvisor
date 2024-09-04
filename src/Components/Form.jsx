@@ -113,10 +113,10 @@ function Form() {
                         onChange={handleChange}
                         name="health"
                     >
-                        <option value="empty">-- Choose --</option>
-                        <option value="excellent">Excellent</option>
-                        <option value="good">Good</option>
-                        <option value="fair">Fair</option>
+                        <option value="Empty">-- Choose --</option>
+                        <option value="Excellent">Excellent</option>
+                        <option value="Good">Good</option>
+                        <option value="Fair">Fair</option>
                     </select>
                 </div>
                 
@@ -141,10 +141,10 @@ function Form() {
                         onChange={handleChange}
                         name="contactWay"
                     >
-                        <option value="empty">-- Choose --</option>
-                        <option value="phoneCall">Phone Call</option>
-                        <option value="text">Text</option>
-                        <option value="getEmail">Email</option>
+                        <option value="Empty">-- Choose --</option>
+                        <option value="Phone Call">Phone Call</option>
+                        <option value="Text">Text</option>
+                        <option value="Email">Email</option>
                     </select>
                 </div>
             </div>
