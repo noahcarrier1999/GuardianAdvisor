@@ -120,6 +120,11 @@ select {
   font-family: "Poppins";
 }
 
+input,select,textarea{
+  background-color: #fff;
+  color:#333
+}
+
 textarea{
   border: none;
   resize: none;
@@ -210,5 +215,31 @@ label{
   .footer {
     padding: 10px; /* Adjust footer padding for smaller screens */
     height: 50px; /* Adjust footer height */
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  input, select, textarea {
+    background-color: #fff; /* White background */
+    color: #333; /* Dark text */
+    border: 1px solid #ccc; /* Light border */
+  }
+}
+
+/* Styles for dark mode */
+@media (prefers-color-scheme: dark) {
+  input, select, textarea {
+    background-color: #fff !important; /* Force white background */
+    color: #333 !important; /* Force dark text */
+    border: 1px solid #ccc !important; /* Light border */
+  }
+
+  button {
+    background-color: #584910; /* Ensure button color stays the same */
+    color: #F2EFEB;
+  }
+
+  button:hover {
+    background-color: #bc9c22;
   }
 }
