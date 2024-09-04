@@ -1,0 +1,165 @@
+*{
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box; 
+}
+
+h3{
+  padding:20px;
+  font-family:"Poppins";
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+}
+
+html,body{
+  height: 100%;
+  margin:0;
+  padding:0;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main{
+  flex:1
+}
+
+body{
+  background-color: #bc9c22;
+}
+
+.header{
+  background-color: #584910;
+  display: flex;
+  height: 80px;
+  width: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  height: 150px;
+}
+
+
+.form-container{
+  background-color: #F2EFEB;
+  border-radius: 10px;
+  margin:70px auto;
+  min-width: 650px;
+  max-width: 700px;
+  width:70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   box-shadow: 4px 5px 13px -3px rgba(0,0,0,0.58);
+  -webkit-box-shadow: 4px 5px 13px -3px rgba(0,0,0,0.58);
+  -moz-box-shadow: 4px 5px 13px -3px rgba(0,0,0,0.58);
+}
+
+.form-header{
+  background-color: #584910;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color:#F2EFEB;
+  padding:10px;
+  text-align: center;
+}
+
+.form-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form{
+  margin: 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group{
+  display: flex;
+  justify-content: space-between;
+  gap:30px
+  
+}
+
+.form-feild{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+
+input,
+select {
+  margin-bottom: 15px;
+  height: 30px;
+  width: 250px;
+  text-indent: 10px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Poppins";
+}
+
+textarea{
+  border: none;
+  resize: none;
+  max-width: 530px;
+  min-width: 530px;
+  height: 120px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-family: "Poppins";
+}
+
+button{
+  background-color: #584910;
+  color:#F2EFEB;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  margin: 20px auto 0 auto;
+  box-shadow: 4px 5px 13px -3px rgba(0,0,0,0.58);
+  -webkit-box-shadow: 4px 5px 13px -3px rgba(0,0,0,0.58);
+  -moz-box-shadow: 4px 5px 13px -3px rgba(0,0,0,0.58);
+}
+
+button:hover{
+  background-color: #bc9c22;
+}
+
+label{
+  font-family: "Poppins";
+}
+
+
+.footer{
+  background-color: #584910;
+  height: 80px;
+  width: 100%;
+  text-align: center;
+  padding:20px 0;
+  margin-top: 0;
+}
+
